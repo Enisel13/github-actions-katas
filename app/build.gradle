@@ -3,6 +3,16 @@ plugins {
     id "com.github.johnrengelman.shadow" version "5.0.0"
     id "application"
 }
+plugins {
+  id "org.sonarqube" version "7.0.1.6134"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "Enisel13_github-actions-katas"
+    property "sonar.organization", "enisel13"
+  }
+}
 
 
 
